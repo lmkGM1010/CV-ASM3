@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #nav-bar .container .info {
+        display: none;
+    }
+    #job-info .job-row {
+        display: grid;
+        grid-template-columns: repeat(2, calc(100% / 2));
+        grid-template-rows: 1fr 1fr;
+        place-content: center;
+        margin: 0 0rem;
+        color: darkslategrey;
+        gap: 1rem;}
+    #certificate .container .container-item {
+        display: block;
+        margin-left: 15px;
+    }
+    #certificate .cer-row .web {
+        border-right: 2px solid orange;
+    }
+    #footer .container {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer .container i{
+        margin-left: 0;
+        display: block;
+        padding: 0;
+    }
+}

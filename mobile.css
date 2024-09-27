@@ -1,0 +1,65 @@
+@media screen and (max-width: 767px) {
+    #nav-bar .container {
+        display: block;
+    }
+    #nav-bar .container .info {
+        padding: 0%
+    }
+    #nav-bar .info-item h1 {
+        display: none;
+    }
+    #nav-bar .info-item span {
+        display: none;
+    }
+    #nav-bar .container > a {
+        justify-content: left;
+        margin: 15px 0;
+    }
+    .info-item {
+        border-left: none;
+        border-right: none
+    }
+    #about .about-row {
+        grid-template-columns: 100%;
+    }
+    .banner .info h1 {
+        font-size: 2.5rem;
+    }
+    #job-info .job-row {
+        display: block;
+        margin: 0;
+    }
+    #certificate .cer-row .heh {
+        display: block;
+        border-bottom: none;
+    }
+    #certificate .container .container-item {
+        border-bottom: 2px solid orange;
+    }
+    #certificate .container .datab {
+        border-bottom: none;
+    }
+    #certificate .container .certificate-img img {
+        display: block;
+    }
+    #certificate .container .container-item {
+        display: block;
+    }
+    #project .pj-row {
+        grid-template-columns: 100%
+    }
+    .bg-grey span{
+        display:none;
+    }
+    #footer .container {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer .container i{
+        margin-left: 0;
+        display: block;
+        padding: 0;
+    }
+}

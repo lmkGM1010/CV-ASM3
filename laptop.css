@@ -1,0 +1,426 @@
+* {
+    margin: 0px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+/* section>.container {
+    width: 1170px;
+    margin: auto;
+    display: block;
+} */
+
+#nav-bar {
+    text-align: center;
+}
+
+/* my stuff will be here */
+:root {
+    --icon-color: #23a0dc;
+    --about-section-padding: 48%;   
+    --nav-bar-item-color: rgb(172, 172, 172);
+}
+
+body {
+    user-select: none;
+}
+
+.banner {
+    position: relative;
+    background-color: #0000002f;
+}
+
+.banner img {
+    width: 100%;
+    height: 30.5rem;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(50%);
+}
+
+.banner .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-bottom: 13rem;
+    width: 100%;
+    text-align: center;
+}
+
+.banner .info h1 {
+    font-size: 3.5rem;
+}
+
+.banner .info span {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+/* body {
+  user-select: none;
+} */
+
+.banner {
+    position: relative;
+    background-color: #0000002f;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 30.5rem;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(50%);
+    /* ! fixme: resize image could overflow the page */
+  }
+  
+  .banner .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-bottom: 13rem;
+  }
+  
+  .banner .info h1 {
+    font-size: 3.5rem;
+  }
+  .banner .info span {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+/* #region navbar */
+#nav-bar .container {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-bar .container > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-item {
+    padding: 0 30px;
+    border-right: 1px solid rgb(172, 169, 169);
+    border-left: 1px solid rgb(172, 169, 169);
+    vertical-align: middle;
+}
+
+#nav-bar .container .info {
+    --spaces: 4em;
+    padding: 7px var(--spaces);
+}
+
+#nav-bar .container a:visited,
+#nav-bar .container a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#nav-bar .container a:visited:hover,
+#nav-bar .container a:hover {
+    text-decoration: underline;
+}
+
+#nav-bar .container:has(a) i {
+    color: var(--icon-color);
+}
+
+/* #endregion */
+
+/* #region this user info thing */
+#about .about-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding: 0;
+}
+
+#about .stuff {
+    padding: 70px 50px;
+}
+
+#about .stuff .section-title {
+    margin-block-end: 3rem;
+}
+
+#about #personal-info {
+    background: #f0f0f0;
+}
+
+#about #personal-info .info {
+    padding-left: 0;
+    margin-block-end: 20px;
+}
+
+#about #personal-info li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+#about #personal-info span {
+    font-weight: bold;
+}
+
+#about .social-links {
+    display: flex;
+    gap: 15px;
+}
+
+#about .social-links>* {
+    color: var(--icon-color)
+}
+
+/* #endregion */
+
+/* #region this user job info */
+#job-info {
+    display: flex;
+    justify-content: center;
+}
+
+#job-info .job-row {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    margin: 0 4rem;
+    color: darkslategrey;
+    gap: 1rem;
+}
+
+#job-info .job-row>* {
+    padding: 2rem;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+.skillissue i {
+    font-size: 50px;
+}
+
+#job-info .job-row h1 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+#job-info .job-row h1>i {
+    margin-left: auto;
+}
+
+#job-info .job-row h3,
+#job-info .job-row h4 {
+    margin-bottom: 1rem;
+}
+
+#job-info .job-row .tag {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.tag.current {
+    background-color: #077cff;
+}
+
+#job-info #warpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+#job-info #warpper .item {
+    flex: 1 1 0;
+}
+
+#job-info #warpper .item>div {
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+
+#job-info #warpper .item i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #4363f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#4363f3;
+    font-size: 30px;
+}
+
+.jobin {
+    list-style-type: "- ";
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.landg {
+    margin-top: 21px;
+    font-weight: bolder;
+}
+
+.level span {
+    border-bottom: solid gray 3px;
+    display: inline-block;
+    width: 60px;
+}
+
+.level .blue {
+    border-bottom-color: rgb(0, 119, 255);
+}
+
+/* #endregion */
+
+/* #region certificate */
+#certificate {
+    padding: 2rem 19%;
+}
+  
+#certificate .cer-row {
+    padding: 0;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+#certificate .section-title {
+    margin-bottom: 2rem;
+}
+  
+#certificate .cer-row .web {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#certificate .cer-row .heh {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 2px solid orange;
+}
+#certificate .container .container-item {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 20px;
+}
+#certificate .container .datab {
+    margin-top: 20px
+}
+  
+#certificate .container .container-item ul {
+    list-style-type: "- ";
+    padding-left: 0;
+    font-weight: 400;
+    margin-top: 10px;
+}
+  
+#certificate .container .container-item li {
+    margin-left: 10px;
+    color:rgb(109, 91, 91)
+}
+  
+#certificate .container .container-item .title {
+    font-weight: bold;
+}
+#certificate .container .certificate-img {
+    width: 200px;
+}
+#certificate .container .certificate-img img {
+    width: 100%
+    }
+
+#certificate .container .certificate-img:nth-child(1) {
+    --image-url: url('../images/Cert_DBI.png');
+}
+ #certificate .container .certificate-img:nth-child(2) {
+    --image-url: url('../images/Cert_PRF.png');
+}
+#certificate .container .certificate-img:nth-child(3) {
+    --image-url: url('../images/Cert_WEB.png');
+    padding-top: 3rem;
+}
+/* #endregion */
+
+/* #region footer */
+#footer .container {
+    height: 80px;
+}
+#footer .container i {
+    display: inline-block;
+    color: rgb(58, 160, 228);
+    transform: scale(2.3);
+    margin-left: 220px;
+    padding-top: 20px;
+}
+#footer .container i span{
+    font-size: 10px;
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* #endregion */
+
+/* #region project */
+#project .pj-row {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 33px;
+}
+
+#project .pj-row .project1 img {
+    width: 100%;
+}
+
+#project .pj-row .project1 .horizontal-table {
+    display: flex;
+}
+#project .pj-row .project1 .year21 {
+    padding: 2px 5px;
+    border-radius: 12px;
+    color: white;
+}
+
+.project1 .year21 {
+    background-color: #077cff;
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+}
+.styled-table th,
+.styled-table td {
+    padding: 10px 9px;
+}
+.styled-table .active-row td {
+    font-size: 14px;
+}
+.styled-table .active-row {
+    display: grid;
+    grid-template-columns: 32% 68%;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#project .leled {
+    border: 1px solid #dddddd ;
+}
+/* #endregion */
